@@ -1,1 +1,1 @@
-CALL insert_data_example('ABC', 'XYZ');
+call example_procedure();

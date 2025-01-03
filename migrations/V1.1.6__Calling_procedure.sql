@@ -1,1 +1,1 @@
-CALL insert_data_example('HELLO_WORLD', 'ABC', 'XYZ');
+CALL insert_data_example('GIT_INT.DEMO_V3.HELLO_WORLD', 'ABC', 'XYZ');

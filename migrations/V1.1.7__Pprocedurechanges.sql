@@ -16,5 +16,5 @@ $$;
 
 
 
-CALL insert_into_table('ABC', 'XYZ');
+
 

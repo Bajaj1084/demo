@@ -1,3 +1,4 @@
+
 CREATE OR REPLACE PROCEDURE insert_into_table(
     name STRING,
     lname STRING
@@ -7,13 +8,13 @@ LANGUAGE SQL
 AS
 $$
 BEGIN
-    INSERT INTO GIT_INT.DEMO_V3.HELLO_WORLD (FIRST_NAME ,LAST_NAME )
-    VALUES (name, lname);
-    RETURN 'Row inserted successfully';
+    INSERT INTO GIT_INT.DEMO_V3.HELLO_WORLD (FIRST_NAME, LAST_NAME)
+    VALUES (:name, :lname);
+  
 END;
 $$;
 
 
 
-CALL insert_data_example("ABC", "XYZ");
+CALL insert_into_table("ABC", "XYZ");
 

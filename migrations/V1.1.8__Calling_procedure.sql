@@ -1,1 +1,1 @@
-CALL insert_into_table(ABC, xYZ);
+CALL insert_into_table('ABC', 'XYZ');

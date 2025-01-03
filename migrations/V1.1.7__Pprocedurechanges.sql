@@ -1,6 +1,6 @@
 CREATE OR REPLACE PROCEDURE insert_into_table(
     name STRING,
-    lname STRING,
+    lname STRING
 )
 RETURNS STRING
 LANGUAGE SQL

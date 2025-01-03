@@ -1,6 +1,6 @@
 CREATE OR REPLACE PROCEDURE  insert_data_example(
     name STRING,
-    lname STRING,
+    lname STRING
 )
 RETURNS STRING
 LANGUAGE SQL

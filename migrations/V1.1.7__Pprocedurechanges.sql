@@ -1,16 +1,19 @@
-CREATE OR REPLACE PROCEDURE insert_data_example(tbl_name STRING, col1_value STRING, col2_value STRING)
+CREATE OR REPLACE PROCEDURE insert_into_table(
+    name STRING,
+    lname STRING,
+)
 RETURNS STRING
 LANGUAGE SQL
-AS 
+AS
 $$
 BEGIN
-    EXECUTE IMMEDIATE 
-        'INSERT INTO ' || tbl_name || 
-        ' VALUES (''' || col1_value || ''', ''' || col2_value || ''')';
-    RETURN 'Row inserted successfully!';
+    INSERT INTO GIT_INT.DEMO_V3.HELLO_WORLD (FIRST_NAME ,LAST_NAME )
+    VALUES (name, lname);
+    RETURN 'Row inserted successfully';
 END;
 $$;
 
 
-CALL insert_data_example("GIT_INT.DEMO_V3.HELLO_WORLD", "ABC", "XYZ");
+
+CALL insert_data_example("ABC", "XYZ");
 

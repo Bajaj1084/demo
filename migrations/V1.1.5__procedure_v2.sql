@@ -1,16 +1,9 @@
-CREATE OR REPLACE PROCEDURE insert_data_example(
-    name STRING,
-    lname STRING
-)
+CREATE OR REPLACE PROCEDURE example_procedure()
 RETURNS STRING
 LANGUAGE SQL
-AS
+AS 
 $$
 BEGIN
-    INSERT INTO GIT_INT.DEMO_V3.HELLO_WORLD (FIRST_NAME, LAST_NAME)
-    VALUES (:name, :lname);
-  
+    RETURN 'Hello, this is a basic procedure!';
 END;
 $$;
-
-

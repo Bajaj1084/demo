@@ -1,1 +1,1 @@
-CALL GIT_INT.DEMO_V3.insert_into_table.insert_into_table('ABC', 'XYZ');
+CALL insert_into_table('ABC', 'XYZ');

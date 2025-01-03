@@ -1,1 +1,1 @@
-CALL insert_data_example('ABC', 'XYZ');
+CALL insert_into_table('ABC', 'XYZ');

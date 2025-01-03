@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE insert_into_table(
+CREATE OR REPLACE PROCEDURE GIT_INT.DEMO_V3.insert_into_table(
     name STRING,
     lname STRING,
 )

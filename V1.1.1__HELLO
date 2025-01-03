@@ -1,1 +1,1 @@
-USE SCHEMA DEMO_v2;
+Create or replace schema demo_v3;

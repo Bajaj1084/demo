@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE insert_into_table(
+CREATE OR REPLACE PROCEDURE  insert_data_example(
     name STRING,
     lname STRING,
 )

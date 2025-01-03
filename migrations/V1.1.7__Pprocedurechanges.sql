@@ -6,10 +6,11 @@ $$
 BEGIN
     EXECUTE IMMEDIATE 
         'INSERT INTO ' || tbl_name || 
-        ' VALUES (''' || col1_value || ''', ''' || col2_value || ''')';
+        ' VALUES (''' || REPLACE(col1_value, '''', '''''') || ''', ''' || REPLACE(col2_value, '''', '''''') || ''')';
     RETURN 'Row inserted successfully!';
 END;
 $$;
+
 
 CALL insert_data_example('GIT_INT.DEMO_V3.HELLO_WORLD', 'ABC', 'XYZ');
 

@@ -1,0 +1,1 @@
+Drop schema demo_v3;

@@ -12,7 +12,7 @@ BEGIN
     INSERT INTO GIT_INT.DEMO_V3.HELLO_WORLD (FIRST_NAME, LAST_NAME)
     VALUES (:name, :lname);
     COMMIT;
-    RETURN 'Success';
+    RETURN 'Inserted';
   
 END;
 $$;
